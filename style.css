@@ -1,3 +1,13 @@
 .row {
-    height:290px;
+    height:265px;
+    padding:10px;
+}
+#bookShowRow {
+    background-color: #20d875;
+}    
+img {
+    
+}
+h5 {
+    padding-top:5px;
 }

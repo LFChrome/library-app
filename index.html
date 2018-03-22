@@ -23,13 +23,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class='nav-item'>
-                        <button id="contact" type="submit">Contact Information</button>
+                        <button id="contact" class="btn btn-outline-success my-2 my-sm-0" type="submit">Contact Information</button>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -42,18 +42,33 @@
         <!-- HTML SHOULD GO HERE-->
         <div class = "container"> 
             <div class = "bookShow">
-                <h3>Books you might like:</h3>
-                <div class = "row">
-                    <div class="">
+                <h3 id="title">Books you might like:</h3>
+                <div class="row" id="bookShowRow">
+                    <div class="col-sm-4">
                         <img src="https://goo.gl/8SP7oU" class="img-fluid img-thumbnail" alt="Responsive image">
+                        <h5>Wet Dog</h5>
+                        <p>by Sophie Gamand</p>
                     </div>
-                    <div class="">
-                        <img src="https://goo.gl/vZnFFu" class="img-fluid img-thumbnail rounded float-left" alt="Responsive image">
+                    <div class="col-sm-4">
+                        <img src="https://goo.gl/vZnFFu" class="img-fluid img-thumbnail" alt="Responsive image">
+                        <h5>Atoms</h5>
+                        <p>by Chris Oxlade</p>
                     </div>
-                    <div class="">
+                    <div class="col-sm-4">
                         <img src="https://goo.gl/GxX1g8" class="img-fluid img-thumbnail" alt="Responsive image">
-                    </div>   
+                        <h5>The Big Book Of Cupcakes</h5>
+                        <p>by Crocker Betty</p>
+                    </div>
+                </div>    
+                <div class="row">    
+                    
                 </div>
+            </div>
+            <div class="guide" class="row">
+                <h4>Help:</h4>
+                <ul>
+                    
+                </ul>
             </div>
         </div>
     </body>
