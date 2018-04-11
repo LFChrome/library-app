@@ -7,7 +7,10 @@
         <!-- Your CSS files -->
         <link rel="stylesheet" type="text/css" href="style.css">
         <!-- jQuery JavaScript library -->
-        <script src="jquery-3.3.1.js"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
         <!-- JavaScript file -->
         <script src="script.js"></script>
     </head>
@@ -33,14 +36,30 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  <input id='input' class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button id='search' class="btn btn-primary">Search</button>
                 </form>
             </div>
         </nav>
         
         <!-- HTML SHOULD GO HERE-->
-        <div class = "container"> 
+        <div class="container"> 
+            <!-- Contact Information Section -->
+            <div class='row contactInfo'>
+                <div class="col-sm-4">
+                    <h1>Reading SF Library</h1>
+                    <p>
+                        <li>Location:San Francisco</li>
+                        <li>Address:1263 Mission St, San Francisco, CA 94103</li>
+                        <li>Hours: Monday-Sunday 10am-5pm</li>     
+                        <li>Phone: (415) 469-4550</li>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Hello</p>
+                </div>
+            </div>
+            <!-- Recommended Section -->
             <div class = "bookShow">
                 <h3 id="title">Books you might like:</h3>
                 <div class="row" id="bookShowRow">
@@ -60,15 +79,20 @@
                         <p>by Crocker Betty</p>
                     </div>
                 </div>    
-                <div class="row">    
-                    
-                </div>
             </div>
+            <!-- Help Section -->
             <div class="guide" class="row">
-                <h4>Help:</h4>
-                <ul>
-                    
-                </ul>
+                <h4>Help in steps:</h4>
+                <ol class="instructions">
+                    <li>Look at the recommended books section</li>
+                    <ul>
+                        <li style="list-style-type:square">If you don't like any of the recommended books then click on the search bar at the top of the page then type the title of the book you want to read</li>
+                    </ul>
+                    <li>If you see a book and would like to read it you should click on it</li>
+                    <ul>
+                        <li style="list-style-type:square">These intructions were madepossible by me and should e,meail me if any westions</li>
+                    </ul>
+                </ol>
             </div>
         </div>
     </body>

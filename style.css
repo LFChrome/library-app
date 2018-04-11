@@ -11,3 +11,12 @@ img {
 h5 {
     padding-top:5px;
 }
+.contactInfo{
+    display:none;
+}
+
+
+
+.instructions {
+    background-color:#1cce75;
+}
