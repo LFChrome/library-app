@@ -18,6 +18,10 @@ h5 {
 .instructions {
     background-color:#1cce75;
 }
-row contactInfo {
+.contactInfo {
     background-color:gainsboro;
+}
+#img1 {
+    width:415px;
+    height:245.3px;
 }

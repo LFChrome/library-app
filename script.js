@@ -6,17 +6,15 @@ $(document).ready(function(){
     // Functions ----------------------------------------------------
     // Search books with the Search Term
     function getBooksFromAPI(SearchTerm) {
-        var APIwithKeyTerm = 'https://www.googleapis.com/books/v1/volumes?q=' + SearchTerm;
+        var APIwithKeyTerm = 'https://www.googleapis.com/books/v1/volumes?q=' + SearchTerm +'';
+        console.log(APIwithKeyTerm);
         $.ajax({
             url: APIwithKeyTerm, 
             method: 'GET',
             success: function(response) {
-                if (response.totalItems >= 6) {
-                    for(var i = 0; i < 6; i++) {
-                        displayBook(response.items[i]);
-                    }
-                } else {
-                    alert('Book(s) could not be found, be more specific!');
+                console.log("Success");
+                for(var i = 0; i < 6; i++) {
+                    displayBook(response.items[i]);
                 }
             },
             error: function() {
@@ -37,7 +35,7 @@ $(document).ready(function(){
     }
     // clear contents of page
     function clearContainer() {
-        $(".container").hide();
+        $(".container").empty();
     }
     // Search button for books
     $('#search').click(function() {
