@@ -11,8 +11,8 @@ $(document).ready(function(){
             url: APIwithKeyTerm, 
             method: 'GET',
             success: function(response) {
-                if (response.totalItems >= 5) {
-                    for(var i = 0; i < 5; i++) {
+                if (response.totalItems >= 6) {
+                    for(var i = 0; i < 6; i++) {
                         displayBook(response.items[i]);
                     }
                 } else {
@@ -45,15 +45,11 @@ $(document).ready(function(){
         getBooksFromAPI(userInput);
         console.log(userInput);
     });
-    
+    // Show contact information
     $("#contact").click(function(){
-        $(".contactInfo").show();
+        $(".contactInfo").css('display','flex');
     });
     
-    function showContainer(){
-        $(".contactInfo").show();
-    }
-
 
 });
  
