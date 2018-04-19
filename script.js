@@ -42,12 +42,57 @@ $(document).ready(function(){
         var userInput = $('#input').val();
         getBooksFromAPI(userInput);
         console.log(userInput);
+       $(".bookShow").empty();
+       $(".guide").empty();
+       $(".review").empty();
+       $(".reviewSection").empty();
+    });
+    //Review button for books
+    $("#Review").click(function(){
+       $(".bookShow").empty();
+       $(".guide").empty();
+       $(".review").show();
     });
     // Show contact information
     $("#contact").click(function(){
         $(".contactInfo").css('display','flex');
+        $(".bookShow").empty();
+        $(".guide").empty();
+        $(".review").empty();
+        $(".reviewSection").empty();
+    });
+  
+    $("#submit").click(function(){
+    console.log("hello");
+    $(".clear").empty();
+    console.log(addReview());
+    displayReview(reviewObject);
     });
     
+    
+function displayReview(reviewObject){
+	var containerMove = "<div class='clear' id='bookInfo'></div>";
+    $("body").append(containerMove);
+    $("#bookInfo").append('<h3>' + reviewObject["title"] + '</h3>');
+    $("#bookInfo").append('<p>' + reviewObject["author"] + '</p');
+    $("#bookInfo").append('<img src="' + reviewObject["date"] + '">');
+    $("#bookInfo").append('<a href="' + reviewObject["comment"] + '">Click Here!' + '</a>');
 
+}
+
+function addReview(){
+	
+	var bookGrab = $("#title").val();
+    var authorGrab = $("#author").val();
+    var dateGrab = $("#date").val();
+    var commentGrab = $("#comment").val();
+    
+    var reviewHolder = {
+    	"title": bookGrab,
+    	"author": authorGrab,
+    	"date": dateGrab,
+    	"comment": commentGrab,
+    };
+        return reviewHolder;
+    }   
 });
- 

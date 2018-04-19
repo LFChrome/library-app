@@ -3,20 +3,21 @@
     padding: 10px;
     margin: 10px;
 }
-#bookShowRow {
-    background-color: #20d875;
-}    
+
 h5 {
     padding-top:5px;
 }
 .contactInfo{
     display:none;
 }
-
-
+.review{
+    display:none;
+}
 
 .instructions {
-    background-color:#1cce75;
+    color:gainsboro;
+    background-color:#3f4f51;
+    font-size: 125%;
 }
 .contactInfo {
     background-color:gainsboro;
@@ -24,4 +25,13 @@ h5 {
 #img1 {
     width:415px;
     height:245.3px;
+}
+#color0 {
+    background-color:#F0DD65;
+}
+#color1 {
+    background-color:#F32222;
+}
+#color2 {
+    background-color:#6ACA6C;
 }

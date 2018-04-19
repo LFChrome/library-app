@@ -25,6 +25,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="navbar-item">
+                        <button id="Review" class="btn btn-outline-success my-2 my-sm-0" type="submit">Review</button>
+                    </li>
                     <li class='nav-item'>
                         <button id="contact" class="btn btn-outline-success my-2 my-sm-0" type="submit">Contact Information</button>
                     </li>
@@ -37,7 +40,7 @@
         </nav>
         
         <!-- HTML SHOULD GO HERE-->
-        <div class="container"> 
+        <div class="container">
             <!-- Contact Information Section -->
             <div class='row contactInfo'>
                 <div class="col-sm-6">
@@ -53,28 +56,53 @@
                     <img src="http://cdn.funcheap.com/wp-content/uploads/2015/05/sunset-library_p31-550x341.jpg" class="img-fluid img-thumbnail" id="img1">
                 </div>
             </div>
+        </div>
             <!-- Recommended Section -->
-            <div class = "bookShow">
+        <div class = "bookShow">
                 <h3 id="title">Books you might like:</h3>
                 <div class="row" id="bookShowRow">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" id="color0">
                         <img src="https://goo.gl/8SP7oU" class="img-fluid img-thumbnail" alt="Responsive image">
                         <h5>Wet Dog</h5>
                         <p>by Sophie Gamand</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" id="color1">
                         <img src="https://goo.gl/vZnFFu" class="img-fluid img-thumbnail" alt="Responsive image">
                         <h5>Atoms</h5>
                         <p>by Chris Oxlade</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" id="color2">
                         <img src="https://goo.gl/GxX1g8" class="img-fluid img-thumbnail" alt="Responsive image">
                         <h5>The Big Book Of Cupcakes</h5>
                         <p>by Crocker Betty</p>
                     </div>
                 </div>    
             </div>
+            <!-- Review Section -->
+            <div class="review">
+                <div class="col">
+                    <h2 class="text-center">Write a Review!</h2>
+                    <div class="form-group">
+                        <label for="title">Book:</label>
+                        <input type="text" placeholder="Book title" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="artist">Author:</label>
+                        <input type="text" placeholder="Author's name" class="form-control" id="author">
+                    </div>
+                    <div class="form-group">
+                        <label for="play-link">Date:</label>
+                        <input type="text" placeholder="Today's Date" class="form-control" id="date">
+                    </div>
+                        <div class="form-group">
+                        <label for="album-image">Comment:</label>
+                        <input type="text" placeholder="Your Comment" class="form-control" id="comment">
+                    </div>
+                        <button class="btn btn-success btn-block" id="submit"> Submit </button>
+                </div>
+            </div>
             <!-- Help Section -->
+            
             <div class="guide" class="row">
                 <h4>Help in steps:</h4>
                 <ol class="instructions">
@@ -87,6 +115,10 @@
                         <li style="list-style-type:square">These intructions were madepossible by me and should e,meail me if any westions</li>
                     </ul>
                 </ol>
+            </div>
+            <div class="reviewSection row">
+                <h5> Reviews from our readers:</h5>
+                
             </div>
         </div>
     </body>
