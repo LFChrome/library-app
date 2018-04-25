@@ -63,10 +63,10 @@ $(document).ready(function(){
     });
   
     $("#submit").click(function(){
-    console.log("hello");
-    $(".clear").empty();
-    console.log(addReview());
-    displayReview(reviewObject);
+        console.log("hello");
+        $(".clear").empty();
+        console.log(addReview());
+        displayReview(reviewObject);
     });
     
     
